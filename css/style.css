@@ -1,0 +1,79 @@
+body {
+	padding: 20px 10px;
+	font-family: Helvetica;
+	max-width: 2000px;
+	margin: 0 auto;
+  font-size: 1.4em;
+}
+h1 {
+	text-align: center;
+	color: #003D2E;
+}
+p {
+	margin: 10px 0;
+}
+.lesson {
+	background-color: #003D2E;
+	border-radius: 20px;
+	color: white;
+	padding: 10px;
+	margin: 10px auto;
+}
+h2 {
+	margin: 10px;
+}
+.concept {
+	background-color: #CCF5EB;
+	padding: 4px;
+	margin: 10px;
+	border-radius: 4px;
+	color: black;
+}
+.concept-title {
+	font-size: 35px;
+	margin: 8px;
+	text-align: center;
+	color: #3D5C5C;
+}
+.concept-description {
+	font-weight: lighter;
+	margin: 6px;
+}
+.center-text {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;  
+}
+.code {
+	font-family: Courier;
+	color : black;
+	font-weight: bold;
+	padding-left:  4px;
+	padding-right: 4px;
+}
+.traffic-light {
+  background-color: white;
+  height: 150px;
+  width: 50px;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 50px; 
+}
+.stop {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: red;
+}
+.slow {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: yellow;
+}
+.go {
+    height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: green
+}
