@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Adam Friedman</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<head>
+  <title>Adam Friedman's Notes</title>
+  <link rel="stylesheet" href="adam-style.css">
+</head>
+<body>
+<h1>Intro To Programming Nanodegree Notes</h1>
+<div class="lesson">
+  <h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+  <div class="concept" id="lesson1-1">
+       <div class="concept-title"> Web Basics</div>
+<div class="concept-description">
+  <p>
+    <b>- The Web<br>
+      - HTML<br>
+      - URLS<br>
+      - HTTP<br>
+      - Web Applications</b>
+  </p>
+  <p>
+    <b><em>World Wide Web</em></b> - Collection of HTML Doctuments.
+    <br>
+    (Web Invented in 1990s. Has about 30 billion pages).
+  </p>
+  <p>
+    The <b>Major Pieces/Concepts</b> of the web are best illustrated by this picture:
+    <br>
+    <img src=http://tuxar.uk/wp-content/uploads/2015/01/Client-server-model.png alt="error!">
+         </p>
+      <div class="center-text">
+        <b> WEBPAGE SUMMARY:</b>
+  </div>
+  <p>
+      - A webpage is a text document written in a language called HTML.  Browsers read these documents and then interpret and display them.
+  </p>
+</div>
+</div>
+<div class="concept" 
+     id="lesson-1-2">
+  <div class="concept-title">
+    HTML
+  </div>
+  <div class="concept-description">
+    <p>
+      <b><em>HTML</em></b> - <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage. <br>
+      - HTML Documents makeup the web. Considered the "heart" of the web.
+    </p>
+    <p>
+    <em>HTML is made up of the following</em>:
+      </p>
+    <p>
+      1) <b>Text Content</b> - What you see.
+      <br>
+      2) <b>Markup</b> - What It Looks Like.
+      <br>
+      3) <b>Reference to other Docs</b> - e.g. Images & Videos.
+      <br>
+      4) <b>Links to other Pages</b>
+    </p>
+  </div>
+</div>
+<div class="concept" 
+     id="lesson-1-3">
+  <div class="concept-title">
+    HTML Markup: Tags & Elements
+  </div>
+  <div class="concept-description">
+    <p>
+      <span class="code">&lt;Name&gt;Contents&lt;/Name&gt;</span> ---- **<em> This is known as an <b>Element </b></em>** (Everything within a set of opeing & closing Tags).
+      <br>
+      <span class="code">&lt;Name&gt;</span> = <b>OPENING TAG</b>
+      <br>
+      <span class="code">&lt;/Name&gt;</span> = <b>CLOSING TAG</b>
+    </p>
+    <p>
+      <b>Tags</b> are part of basic HTML vocabulary. An HTML Tag is always contained within angled brackets. Most tags have an <em>Open Tag</em> and <em>Closing Tag</em>. Some examples are:
+    </p>
+    <p>
+      <b>B Tag</b> - <span class="code">&lt;b&gt;<b>contents</b>&lt;/b&gt;</span>
+      <br>
+      b = <b>BOLD</b> (The contents will always appear in bold).
+    </p>
+    <p>
+      <b>Em Tag</b> - <span class="code">&lt;em&gt;<em>contents</em>&lt;/em&gt;</span>
+      <br>
+      em = <em>EMPHASIS</em> (The content will always appear in italics).
+    </p>
+    <p>
+      Some tags do not require a closing tag.  These tags are called <b>Void Tags</b>. Some expamples are:
+    </p>
+    <p>
+      <span class="code">&lt;img&gt;</span> = Image Tag
+      <br>
+      <span class="code">&lt;br&gt;</span> = Break Tag
+    </p>
+    <p>
+      <b>HTML ATTRIBUTES</b> - <em>A property of an HTML element</em>.
+    </p>
+    <p>
+      - An HTML Attribute looks like the following: 
+      <br>
+      <span class="code">&lt;Tag Attr ="Value"&gt; Contents &lt;/Tag&gt;</span>
+    </p>
+    <p>
+      - An example of a tag that uses an Attribute is the <b>Anchor Tag</b>.
+      <br>
+      - <b>Anchor Tag</b> - <span class ="code">&lt;a&gt;</span>
+        <br>
+      - Anchors are for making links.
+    </p>
+    <p>
+      <em>FULL EXAMPLE</em>: &lt;span ="code"&gt;&lt;a href =www.reddit.com&gt;derp&lt;/a&gt;&lt;/span&gt;
+      <br>
+      <em>** href = Attribute Name
+        <br>
+        ** www.reddit = Value (in this case a URL)
+        <br>
+        ** derp = Contents</em>
+    </p>
+    <p>
+      <b>IMAGE TAG</b> (<span class ="code">&lt;img&gt;</span>)
+      <br>
+      <span class = "code">&lt;img src ="url" alt ="text"&gt;</span>
+      <br>
+      **<em>alt = "text" is <b>required</b> (text gets displayed when image does not load)</em>.
+    </p>
+  </div>
+</div>
+<div class="concept" 
+     id="lesson-1-4">
+  <div class="concept-title">
+    Inline vs. Block Elements
+  </div>
+  <div class="concept-description">
+    <p>
+      <b>WHITE SPACE</b>: Text entered on multiple lines are all entered into a single space. To force it to have multiple lines, we use the
+      tag <span class="code">&lt;br&gt;</span> (<em>Break Tag</em>).
+    </p>
+    <p>
+      **<em> EXAMPLE WITHOUT THE <span class ="code">&lt;br&gt;</span> Tag</em> ** :
+    </p>
+    <p> 
+      "Text on multiple lines."
+    </p>
+    <p>
+      **<em> EXAMPLE WITH THE <span class="code">&lt;br&gt;</span> Tag</em> ** :
+    </p>
+    <p>
+      "Text on
+      <br>
+      multiple lines."
+    </p>
+    <p>
+      - Another way of using line breaks is to use the tag <span class="code">&lt;p&gt;</span>.
+      <br>
+      <span class="code">&lt;p&gt;</span> stands for "Paragraph" and looks like this:
+      <span class="code">&lt;p&gt;content&lt;/p&gt;</span>
+    </p>
+    <div class="center-text">
+      <b>INLINE / BLOCK</b>
+    </div>
+    <p>
+      Why do we have two ways for making new lines?
+    </p>
+    <p>
+      <em>ANSWER</em>:
+    </p>
+    <p>
+      <span class=code>&lt;br&gt;</span> = Inline - Says where to end the line and have the remaining text wrap to the next line.
+      <br>
+      <span class="code">&lt;p&gt;</span> = Block - Makes an invisible box around text that can have height and width.
+    </p>
+      <div class="center-text"><b>SPAN & DIV ELEMENTS</b>
+    </div>
+    <p>
+      <span class="code">&lt;span&gt;Text&lt;/span&gt;</span> - <em>Inline</em>
+      <br>
+      <span class ="code">&lt;div&gt;Text&lt;/div&gt;</span> - <em>Block</em>
+    </p>
+    <p>
+      - You can attach different styles to them to adjust behaviors of how they display.
+    </p>
+  </div>
+</div>
+<div class="concept"
+     id="lesson-1-5">
+  <div class="concept-title">
+    Other Important Notes to Take Away From This Lesson
+  </div>
+  <div class="concept-description">
+    <p>
+      <b>* How Coding Works</b> - Coding happens when programmers write text in a language that a computer can understand. The 
+      computer can then follow the instructions the programmer wrote.
+    </p>
+    <p>
+      <b>* Computers are Stupid</b> - Programmers need to write exactly the way a computer understands (also known as writing with the correct "Syntax").  For example, if you forgot to close a &lt;b&gt; tag, the computer wont be able to figure out what you had intended to make bold. This "Stupidicity" can be frustrating, but it also gives programmers incredible power: If you know how to talk to a computer than you can tell it to do anything you want.
+    </p>
+    <p>
+      <b>* Programmers Can't Remember Everything</b> - There are too many details to keep everything in your head. If you forget how to make text italic in HTML, you can always look it up.
+    </p>
+  </div>
+</div>
+</div>
+  <div class="lesson">
+  <h2 id ="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+  <div class="concept" id="lesson-2-1">
+    <div class="concept-title">
+      HTML & CSS
+    </div>
+    <div class="concept-description">
+      <p>
+        <b><em>Front End Web Development</em></b> - Area of programming that is inherently visable: Any code you write will be visable inside the browser.
+      </p>
+        <div class="center-text"><b>HTML</b>
+      </div>
+    <p>
+        - Has specific language with syntax and rules (you write HTML in a document, except you follow HTML syntax and rules as opposed to grammatical syntax and rules).
+        <br>
+        - The basic word in HTML language is a Tag. Browsers turn HTML tags into elements that form a "tree" (<em>more on "trees" in the next section</em>).
+      </p>
+        <div class="center-text"><b>CSS</b>
+  </div>
+        <p>
+        - Language used to define the style of the page. Allows you to use syntax and rules of HTML to change how elements appear on the page (Font, Color, Background, etc.).
+      </p>
+        <div class="center-text"><b>Summary & Analogy</b>:
+   </div>
+        <p>
+        As stated above, both HTML and CSS are "languages." HTML controls the structure of a webpage, while CSS controls the style (how it looks). To 
+        better understand, here is a helpful analogy:
+      </p>
+        <p>
+        A website is like a house. <b>HTML</b> is the structure (<em>Where the walls are placed, what room is what, etc...</em>). <b>CSS</b> is the style of your house (<em>What color is the carpeting? What decorations do you have? What color are the walls? etc...</em>). <b>Java Script</b> are your
+        interactive components (<em>your garage door opener, your televeision remote, etc....</em>). They change some element of your house.
+      </p>
+    </div>
+  </div>
+  <div class="concept" id="lesson-2-2">
+    <div class="concept-title">
+      The "Tree-Like Structure" of HTML
+    </div>
+    <div class="concept-description">
+      <p> - Browsers build a "<b>TREE-LIKE STRUCTURE</b>" of the webpage.
+        <br>
+        - The "<b>Tree-like Structure</b>" comes from the fact that HTML elements can have other elements inside of them. You can draw this
+        relationship like a family tree. In a browser, this structure shows up as a series of nested boxes. These are boxes inside of boxes,
+        inside of boxes, and so on...
+      </p>
+      <p>
+        * When programmers talk about "<b>DOM</b>" (<b>D</b>ocument <b>O</b>bject <b>M</b>odel), they are talking about the "tree-like structure" of a page.
+        <br>
+        * When looking at "Developer Tools" in a browser, sideways triangles are an HTML element. This can be text or another element, etc.
+      </p>
+    </div>
+  </div>
+  <div class="concept" id="lesson-2-3">
+    <div class="concept-title">
+      The relationship between indented HTML and boxes
+    </div>
+    <div class="concept-description">
+      <p>
+        When you read an HTML document as
+          <em>text</em>, you see a wave of
+          changing indentations going up and down the left side
+          of the document. The more indented an element is, the
+          more deeply nested its corresponding "box" is.
+      </p>
+      <p>
+        - Everything on websites are in square and rectangular boxes.
+        <br>
+        - All shapes are within a box. They are created by style. <em>Ex</em>: Circles, Triangles, etc. are all within boxes set by code.
+        <br>
+        - Boxes are defined by <b>DIV</b> tags (a block tag)
+      </p>
+    </div>
+  </div>
+  <div class="concept" id="lesson-2-4">
+    <div class="concept-title">
+      Text Editors (for programming)
+    </div>
+    <div class="concept-description">
+      <p>
+        When writing code, programmers use special <b>Text Editors</b> (like <em>Sublime Text</em> for example). These editors make the programmer's life easier. For example, some text editors will automatically generate a closing HTML tag when you write an opening tag.
+      </p>
+        <div class="center-text"><b>Where Should I Write Code?</b> (<em>**FOR NOW**</em>)
+    </div>
+      <p>
+        1. Write in <b>Scratchpad</b>
+        <br>
+        2. Write CSS inside of a <span class="code">&lt;style&gt;</span> element in <b>Scratchpad</b> <span class="code">&lt;/style&gt;</span>
+        <br>
+        3. If you want to share code, use <b>Codepen</b> (copy & paste from <b>Scratchpad</b>)
+      </p>
+      <p>
+        Later you will use <b>Sublime</b> to write code that you will save on your computer.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div class="lesson">
+    <h2 id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+    <div class="concept" id="lesson-3-1">
+      <div class="concept-title">
+        CSS
+      </div>
+      <div class="concept-description">
+        <p>
+          There is a way to add style without having to use a separate file and the &lt;link&gt; tag. You can also put your style code in between an opening and closing &lt;style&gt; tag. <em>For Example</em>:
+        </p>
+        <p>
+          <span class="code">&lt;Style&gt;
+          <br>
+          .description { 
+          <br>
+          color: red;
+          <br>
+          }
+          <br>
+            &lt;/Style&gt;</span>
+        </p>
+        <p>
+          - CSS stands for "<b>Cascading Style Sheets</b>". The "C" is by far the most important part of this phrase. 
+        </p>
+        <p>
+          * To better understand CSS, we must understand <b>Inheritance</b>: A key feature of CSS that relies on the ancestor descendant
+          relationship to operate.  Inheritance is the mechanism by which properties are applied not only to a specific element, but also to its
+          descendants. In general, descendant elements inherit text-related properties, but box related properties are not inherited. Properties that <b>can</b> be inherited are color, font, letter-spacing, line height, list style, text align, text indent, text transform, visibility, white-space and word spacing. Properties that <b>cannot</b> be inherited are background, border, display, float and clear, height and width, margin,
+          min/max height and width, outline, overflow padding, position, text-decoration, verticle-align and z index.
+          </p>
+        <p>
+          * Inheritance prevents certain properties from being declared over and over again in a style sheet, allowing software developers to write less CSS.  It also enhances faster loading of websites by users (<em>more on the importance of avoiding repetition further below</em>).
+        </p>
+        <p>
+          - To write a style that applies to the class description, we do so by typing:
+          </p>
+        <p>
+          <span class="code">.description {
+          <br>
+          Color: red;
+          <br>
+            }</span>
+          <br>
+          (<em>In this example, color serves as the attribute</em>).
+        </p>
+        <p>
+          A further example would be if you wanted to write CSS that makes all <b>h1</b> elements have a black background and white text, you would write:
+        </p>
+        <p>
+          <span class="code">h1 {
+          <br>
+          background-color: black;
+          <br>
+          color: white;
+          <br>
+            }</span>
+        </p>
+          <div class="center-text">
+          * <em>IN THIS EXAMPLE</em> * 
+          </div>
+      <p>
+          1. The <b>h1</b> is a <em>Selector</em>. It says to the browser, "I want you to apply the rules I'm about to tell you to every h1 element."
+          <br>
+          2. After the <b>h1</b> there is a left curly brace ( <span class="code">{</span> ) and at the bottom there is a matching right culy brace ( <span class="code">}</span> ). Everything between these
+          curly braces will be interpreted as a "rule" that should be applied to every <b>h1</b> element.
+          <br>
+          3. The line of code that says: <span class="code">background-color: black;</span> is a <b>declaration</b>. <span class="code">background-color</span> is a <b>property</b> and <span class="code">black</span> is the <b>value</b> of
+          <br>
+          that property.
+        </p>
+        <p>
+          In the example above, we set the background-color of every <b>h1</b> to black.  If we only want to add style to certain <b>h1's</b>, we can use
+          <b>Class Selectors</b>. Example:
+          The following Code - 
+        </p>
+        <p>
+          <span class="code">&lt;div class="stop"&gt;&lt;/div&gt;
+          <br>
+          &lt;div class="slow"&gt;&lt;/div&gt;
+          <br>
+            &lt;div class="go"&gt;&lt;/div&gt;</span>
+        </p>
+        <p>
+          <span class="code">&lt;style&gt;
+          <br>
+          div {
+          <br>
+          height: 50px;
+          <br>
+          width: 50px;
+          <br>
+          border-radius: 25px;
+          <br>
+          }
+          <br>
+          .stop {
+          <br>
+          background-color: red;
+          <br>
+          }
+          <br>
+          .slow {
+          <br>
+          background-color: yellow;
+          <br>
+          }
+          <br>
+          .go {
+          <br>
+          background-color: green;
+          <br>
+          }
+          <br>
+          &lt;/style&gt;</span>
+        </p>
+        <p>
+        This looks like a traffic light!!:
+        </p>
+    <div class="traffic-light">
+      <div class="stop"></div>
+      <div class="slow"></div>
+      <div class="go"></div>
+    </div>
+<div class="center-text">
+      <b>There are Three Ways to Include Style on a Webpage:</b>
+</div>
+<p>
+<b>1.</b> Write CSS in the <span class="code">&lt;head&gt;</span> of your HTML. This method is good for very small projects. To do this:
+    <br>
+* At the top of your HTML document, add a <span class="code">&lt;head&gt;</span> element.
+    <br>
+* Inside the <span class="code">&lt;head&gt;</span> element, add a &lt;style&gt; element.
+    <br>
+* Write your CSS in the <span class="code">&lt;style&gt;</span> element and then put the HTML for the rest of your page below.
+    </p>
+  <p>
+    <b>2.</b> Link your HTML to a separate CSS file. This adds another step, but it lets you stay more organized when working on larger projects.  To do this:
+    <br>
+    * Write all of your structural HTML in one file.
+    <br>
+    * In a separate file, put all of your CSS code.
+    <br>
+    * Add a <span class="code">&lt;head&gt;</span> element to the top of your HTML.
+    <br>
+    * Add a <span class="code">&lt;link&gt;</span> tag inside the <span class="code">&lt;head&gt;</span> element. Since <span class="code">&lt;link&gt;</span> is a "void tag", you don't need to add a closing <span class="code">&lt;/link&gt;</span>.
+    <br>
+    * Add the following attributes to your <span class="code">&lt;link&gt;: rel="stylesheet" type="text/css" href="main.css"</span> (<em>** if our CSS file was named
+    <br>
+    "main.css")</em>
+  </p>
+  <p>
+    <b>3.</b> Write your style inline with your HTML.  This is generally a very bad idea because it leads to lots of repeated code, but you may see code that uses this method so good to be familiar with it.  With this method, you modify the style attributes of every individual
+    HTML element.
+</p>
+  <div class="center-text">
+  <b>CSS SUMMARY</b>
+</div>
+        <p>
+          - CSS stands for Cascading Style Sheets and they give programmers a way to control the style of related HTML elements. This is done by giving similar HTML elements the same class name and then specifying the style that should apply to that class.
+        </p>
+<div class="center-text">
+        <p>
+          <b>* Additional Relevant Notes *</b>
+        </p>
+</div>
+        <p>
+          <b>Code Comments</b> - Lines of text computer ignores. Just there so that programmers can leave notes for other people.
+</p>
+<p>
+  *In HTML, code comments begin with <span class="code">&lt;!--</span> and end with <span class="code">--&gt;</span>. Everything in between is ignored.
+  <br>
+  *In CSS, code comments begin with <span class="code">/*</span> and end with <span class="code">*/.</span>
+</p>
+</div>
+</div>
+<div class="concept" id="lesson-3-2">
+  <div class="concept-title">
+    Avoiding Repetition
+  </div>
+  <div class="concept-description">
+    <p>
+      Avoiding repetition is important for a variety of reasons.
+        </p>
+        <p>
+          <b>Avoiding Errors:</b> When programmers <em>don't</em> avoid repetition, they will often have to do the same thing over and over. This may
+          mean copy and pasting certain style attributes into many HTML elements or rewriting the same code (sometimes with minor
+          differences) many times. This can lead to errors when the programmer decides to make a change to something. If they don't
+          dilligently make that same change everywhere the repeated code appears, problems will arise.
+        </p>
+        <p>
+          <b>Consistency:</b> In the example provided, to make all lessons look the same, each lesson <em>div</em> was assigned the same <em>class</em> and then the
+          style for that class was specified in one place (opposed to writing over and over again). This also makes it very easy to make
+          changes to the overall style.
+        </p>
+      </div>
+    </div>
+<div class="concept" id="lesson-3-3">
+  <div class="concept-title">
+    The Box Model
+  </div>
+  <div class="concept-description">
+    <p>
+      <img src=http://guistuff.com/css/images/boxmodel.png alt="error!">
+    </p>
+    <p>
+      <b>Content</b> - Image or text appearing on the website.
+      <br>
+      <b>Padding</b> - Clears the area around the content. Affected by the background color of the box. The space inside of the box that
+      "protects" the content directly.
+      <br>
+      <b>Border</b> - Inherited from the color property of the box.
+      <br>
+      <b>Margin</b> - Clears area around the border. Does not have a background color and is completely transparent. "The space between boxes".
+    </p>
+    <p>
+      * To make the calculation of the element size, include both the border and padding (so easier to make layouts). You can set the width of the overall box, and no matter how you tweak the padding and border sizes, the size of the box will always stay the same.
+      You can do this in CSS by:
+    </p>
+    <p>
+      <span class="code">*{
+        <br>
+        - webkit-box-sizing:border-box;
+        <br>
+        - moz-box-sizing:border-box;
+        <br>
+        - ms-box-sizing:border-box;
+        <br>
+        box-sizing:border-box;
+        <br>
+        }</span>
+    </p>
+    <p>
+      - Sizes of boxes are set in pixels (px) but it can also be done in percentage as well.  You can also set a max width.
+    </p>
+    <p>
+      - Although not displayed in the image above, the box model also contains a <b>Grid</b>, which is displayed purely for visual reasons.
+    </p>
+    <div class="center-text">
+      <b>Box Sizing & Positioning Summary</b>
+    </div>
+    <p>
+      <b>1.</b> HTML elements are boxes and each box has 4 components (margin, border, padding, content).
+      <br>
+      <b>2.</b> Because there are so many components to each box, it can often be hard to get the size of a box just right.
+      <br>
+      <b>3.</b> There are two techniques you can use to help with sizing issues:
+      </p>
+    <p>
+      *Set sizes in terms of percents rather than pixels.
+      <br>
+      *Set the <span class="code">box-sizing</span> attribute to <span class="code">border-box</span> for every element:
+      </p>
+    <p>
+      <span class="code">* {
+        <br>
+        box-sizing: border-box;
+        <br>
+        }</span>
+      </p>
+    <p>
+      <b>4.</b> Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.
+    </p>
+    <div class="center-text">
+      <b>Box Positioning</b>
+    </div>
+    <p>
+      <b>1.</b> Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.
+      <br>
+      <b>2.</b> Adding the rule &lt;span =class"code"&gt;display:flex;&lt;/span&gt; to the appropriate CSS will overide this behavior and let divs appear next to each other.
+    </p>
+    <div class="center-text">
+      <b>Code, Test, Refine</b>
+    </div>
+    <p>
+      <b>1.</b> Look for natural boxes.
+      <br>
+      <b>2.</b> Look for repeated styles and semantic elements.
+      <br>
+      <b>3.</b> Write your HTML.
+      <br>
+      <b>4.</b> Apply styles (from biggest - <em>site-wide elements</em>) to smallest (<em>ex: widgets</em>).
+      <br>
+      <b>5.</b> Fix things.
+    </p>
+  </div>
+</div>
+</div>
+</body>
+
+</body>
+
+</html>
